@@ -5,8 +5,8 @@ HaxeflixelCrashHandler is an c# application made in Visual Studio with the [Wind
 This project is licensed under the [MIT license](LICENSE), you are allowed to copy, modify, merge, publish, distribute, sublicense and freely use this resource in your projects, **no credits are required**, but it would be nice to do so :)
 
 ## Installation
-### NOTE1 THIS CRASH HANDLER WILL ONLY WORK ON WINDOWS BUILDS, ANY OTHER BUILDS WILL BE IGNORED!
-### NOTE2 IF U MANUALLY RUN THE EXE IT WONT DO ANYTHING, ITS NOT BECAUSE ITS BROKEN, ITS BECAUSE IT ONLY RUNS WHEN EXECUTED BY ANOTHER PROGRAM!!!
+### NOTE1: THIS CRASH HANDLER WILL ONLY WORK ON WINDOWS BUILDS, ANY OTHER BUILDS WILL BE IGNORED!
+### NOTE2: IF U MANUALLY RUN THE EXE IT WONT DO ANYTHING, ITS NOT BECAUSE ITS BROKEN, ITS BECAUSE IT ONLY RUNS WHEN EXECUTED BY ANOTHER PROGRAM!!!
 This project was made specificly for Friday Night Funkin', but I decided to also give support to work in any haxeflixel game, in fact, this crash handler will work in every engine/app, you just have to chage the UncaughtErrorEvent depending on your engines programming language and API.
 
 
