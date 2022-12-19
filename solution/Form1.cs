@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +20,6 @@ namespace HaxeflixelCrashHandler
         public HaxeflixelCrashHandler(string[] args)
         {
             crashInfo = args;
-            //crashInfo = new string[] {"sdfdfs<dfssdfsdf", "C:/Games/FNF Davve Engine/export/release/windows/bin/", "Funkin beat'b Engine.exe"};
             InitializeComponent();
         }
         public struct LoadedFont
@@ -90,8 +89,6 @@ namespace HaxeflixelCrashHandler
             reportThisText.BackColor = Color.Transparent;
             reportThisText.ForeColor = Color.White;
 
-            reportThisText.Text = crashInfo[1] + " | " + crashInfo[2] + "\n" + "\n" + "cd/D " + crashInfo[1] + @" && " + @"""" + crashInfo[2] + "";
-
             RelaunchButton.Text = "Relaunch Game";
             RelaunchButton.Font = PhantomMuffBig;
             RelaunchButton.Parent = background;
@@ -111,7 +108,6 @@ namespace HaxeflixelCrashHandler
 
         private void RelaunchButton_Click(object sender, EventArgs e)
         {
-            //string command = "cd/D "+appPath+@" && ""Funkin beat'b Engine.exe"" ";
             string command = "cd/D " + crashInfo[1].Replace("\"", "/") + @" && "+@""""+ crashInfo[2] + "";
             Console.WriteLine(command);
             Process ps = new Process();
